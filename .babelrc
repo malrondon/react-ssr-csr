@@ -1,0 +1,61 @@
+{
+  "presets": ["@babel/preset-react",
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 2 versions", "IE >= 8"],
+        "node": "current"
+      },
+      "useBuiltIns": "entry"
+    }]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 2
+      }
+    ],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-transform-arrow-functions",
+    "transform-react-remove-prop-types"
+  ],
+  "env": {
+    "static": {
+      "plugins": [
+        "transform-inline-environment-variables",
+        "transform-es2015-template-literals",
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": false,
+            "helpers": false,
+            "regenerator": false,
+            "useESModules": false
+          }
+        ],
+      ]
+    },
+    "development": {
+      "plugins": [
+        "react-loadable/babel",
+        "react-hot-loader/babel",
+        [
+          "css-modules-transform",
+          {
+            "preprocessCss": "./internals/css-modules-transform.js",
+            "generateScopedName": "[name]_[local]_[hash:base64:5]",
+            "extensions": [
+              ".scss"
+            ]
+          }
+        ]
+      ],
+      "ignore": [
+        "./internals/css-modules-transform.js"
+      ]
+    }
+  }
+}
