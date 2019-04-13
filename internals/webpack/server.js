@@ -1,15 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
-const DotenvFlow = require('dotenv-flow-webpack');
 
 const configVars = require('./config');
 const webpackCommon = require('./common');
 
 const commonConfig = webpackCommon('server');
-
-const { NODE_ENV } = process.env;
-const ISDEV = NODE_ENV === 'development';
 
 const config = {
   name: 'server',
@@ -46,10 +42,6 @@ const config = {
     ],
   },
   plugins: [
-    new DotenvFlow({
-      environment: ISDEV ? 'development' : 'production',
-      systemvars: true,
-    }),
     new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 }),
     new webpack.EnvironmentPlugin({
       ...configVars.env,

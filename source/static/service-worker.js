@@ -1,11 +1,6 @@
 const CACHE_NAME = `app-${process.env.npm_package_version}`;
 
-const CACHED_URLS = [
-  '/main.min.js',
-  '/main.min.css',
-  '/offline/index.html',
-  '/?utm_source=homescreen',
-];
+const CACHED_URLS = ['/main.min.js', '/main.min.css', '/offline/index.html', '/?utm_source=homescreen'];
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

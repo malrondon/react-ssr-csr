@@ -11,7 +11,7 @@ const result = routing => {
   const query = {};
 
   Object.keys(params).forEach(key => {
-    let value = params[key];
+    const value = params[key];
 
     query[key] = value;
   });
@@ -22,6 +22,10 @@ const result = routing => {
   });
 };
 
-const makeLocationSelector = () => createSelector(routing, result);
+const makeLocationSelector = () =>
+  createSelector(
+    routing,
+    result
+  );
 
 export default makeLocationSelector;

@@ -19,8 +19,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-require('dotenv-flow').config({ default_node_env: 'development' });
-
 dnscache({
   enable: true,
   ttl: 300,

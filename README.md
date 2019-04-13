@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- [Node = v8.11.4](https://nodejs.org/en/)
-- NPM >= v5.6.0
+- [Node = v10.15.x](https://nodejs.org/en/)
+- NPM >= v6.4.x
 - [Yarn >= v1.3.2](https://yarnpkg.com/en/docs/install#linux-tab) or `npm install -g yarn`
 
 ### .gitconfig

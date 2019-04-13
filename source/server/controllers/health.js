@@ -1,11 +1,10 @@
 import Promise from 'bluebird';
 import request from 'request';
-import { API_SEARCH, SERVICE_AREAS } from '../../shared/config';
 import pkg from '../../../package.json';
 
 const dep = {};
 const opts = {
-  url: `${API_SEARCH}${SERVICE_AREAS}`,
+  url: `/`,
   method: 'GET',
   json: true,
   headers: {

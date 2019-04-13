@@ -6,7 +6,7 @@ import configuration from '../../config/config.server.json';
 
 export default initialState => {
   const state = Object.assign({}, { configuration }, initialState);
-  const middlewares = [thunkMiddleware, promiseMiddleware()];
+  const middlewares = [thunkMiddleware, promiseMiddleware];
 
   return configureStore(state, middlewares, reducers);
 };

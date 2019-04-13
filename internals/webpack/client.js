@@ -3,10 +3,8 @@ const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-// const OfflinePlugin = require('offline-plugin');
 const StatsWebpackPlugin = require('stats-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-const DotenvFlow = require('dotenv-flow-webpack');
 
 const configVars = require('./config');
 const webpackCommon = require('./common');
@@ -71,10 +69,6 @@ const config = {
     ],
   },
   plugins: [
-    new DotenvFlow({
-      environment: ISDEV ? 'development' : 'production',
-      systemvars: true,
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
     }),
