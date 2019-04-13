@@ -14,7 +14,6 @@
     "build:client": "./node_modules/.bin/cross-env BABEL_ENV=client ./node_modules/.bin/webpack --config ./internals/webpack/client.js",
     "build_analyze": "./node_modules/.bin/cross-env ANALYZE_MODE=enabled run-p build:*",
     "lint": "run-p lint:*",
-    "lint:sass": "./node_modules/.bin/sass-lint 'source/shared/**/*.scss' --verbose --no-exit",
     "lint:js": "./node_modules/.bin/eslint source",
     "test": "./node_modules/.bin/cross-env BABEL_ENV=testing ./node_modules/.bin/jest",
     "release": "./node_modules/.bin/release-it"
@@ -124,7 +123,6 @@
     "regenerator-runtime": "0.13.2",
     "release-it": "10.4.2",
     "rimraf": "2.6.3",
-    "sass-lint": "1.12.1",
     "sass-loader": "7.1.0",
     "stats-webpack-plugin": "0.7.0",
     "style-loader": "0.23.1",
