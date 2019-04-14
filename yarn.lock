@@ -3472,8 +3472,8 @@ eslint-loader@2.1.2:
     rimraf "^2.6.1"
 
 eslint-module-utils@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.3.0.tgz#546178dab5e046c8b562bbb50705e2456d7bda49"
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.4.0.tgz#8b93499e9b00eab80ccb6614e69f03678e84e09a"
   dependencies:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
@@ -4343,8 +4343,8 @@ handle-thing@^2.0.0:
   resolved "https://registry.yarnpkg.com/handle-thing/-/handle-thing-2.0.0.tgz#0e039695ff50c93fc288557d696f3c1dc6776754"
 
 handlebars@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.1.tgz#6e4e41c18ebe7719ae4d38e5aca3d32fa3dd23d3"
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.2.tgz#b6b37c1ced0306b221e094fc7aca3ec23b131b67"
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -4774,7 +4774,7 @@ ini@^1.3.2, ini@^1.3.4, ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
 
-inquirer@6.2.2, inquirer@^6.2.2:
+inquirer@6.2.2:
   version "6.2.2"
   resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.2.2.tgz#46941176f65c9eb20804627149b743a218f25406"
   dependencies:
@@ -4790,6 +4790,24 @@ inquirer@6.2.2, inquirer@^6.2.2:
     rxjs "^6.4.0"
     string-width "^2.1.0"
     strip-ansi "^5.0.0"
+    through "^2.3.6"
+
+inquirer@^6.2.2:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.3.1.tgz#7a413b5e7950811013a3db491c61d1f3b776e8e7"
+  dependencies:
+    ansi-escapes "^3.2.0"
+    chalk "^2.4.2"
+    cli-cursor "^2.1.0"
+    cli-width "^2.0.0"
+    external-editor "^3.0.3"
+    figures "^2.0.0"
+    lodash "^4.17.11"
+    mute-stream "0.0.7"
+    run-async "^2.2.0"
+    rxjs "^6.4.0"
+    string-width "^2.1.0"
+    strip-ansi "^5.1.0"
     through "^2.3.6"
 
 internal-ip@^4.2.0:

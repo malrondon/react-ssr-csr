@@ -1,4 +1,10 @@
 {
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
   "extends": [
     "eslint:recommended",
     "google"
@@ -10,25 +16,23 @@
   ],
   "parser": "babel-eslint",
   "parserOptions": {
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
   },
-  "env": {
-    "mocha": true,
-    "node": true,
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "jest": true
-  },
   "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
     "beforeAll": true,
     "expect": true,
-    "newrelic": true
+    "newrelic": true,
+    "describe": true,
+    "it": true
   },
   "rules": {
+    "indent": ["error", 2, {"SwitchCase": 1}],
     "no-debugger": "off",
     "no-useless-escape": "off",
     "no-case-declarations": "warn",
