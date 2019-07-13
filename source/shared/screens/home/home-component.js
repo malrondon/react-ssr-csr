@@ -7,7 +7,7 @@ import AppLayout from '../../layouts/app';
 
 class HomePage extends Component {
   renderHelmet() {
-    const title = 'Title';
+    const title = 'Home';
     const description = 'description';
     const image = '.jpg';
     const url = 'https://www.webapp.com.br/';

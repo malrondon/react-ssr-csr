@@ -61,7 +61,7 @@ Name:        ${pkg.name}
 Version:     ${pkg.version}
 NODE_ENV:    ${process.env.NODE_ENV}
 
-Server running on ${process.env.PUBLIC_URL}:${PORT}
+Server running on ${process.env.PUBLIC_URL || 'localhost'}:${PORT}
 `));
 server.timeout = 5000;
 /* eslint-enable */

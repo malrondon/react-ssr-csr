@@ -6,7 +6,7 @@ class AppLayout extends Component {
   render() {
     return (
       <div>
-        <Header active={this.props.header.get('active')} />
+        <Header active={true} />
         <div>
           <div>{this.props.children}</div>
         </div>
