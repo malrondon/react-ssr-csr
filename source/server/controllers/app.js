@@ -7,9 +7,7 @@ import { renderRoutes } from 'react-router-config';
 import { Provider } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { createLocation } from 'history';
-import { ConnectedRouter } from 'react-router-redux';
 
-import history from '../../shared/history';
 import template from '../templates/app';
 import routes from '../../shared/routes';
 import configureStore from '../store';
@@ -52,11 +50,9 @@ const controller = async (req, res, next) => {
     const context = {};
     const html = renderToString(
       <Provider store={store}>
-        <ConnectedRouter history={history}>
-          <StaticRouter location={req.url} context={context}>
-            {renderRoutes(routes)}
-          </StaticRouter>
-        </ConnectedRouter>
+        <StaticRouter location={req.url} context={context}>
+          {renderRoutes(routes)}
+        </StaticRouter>
       </Provider>
     );
     const helmet = Helmet.renderStatic();

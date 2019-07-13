@@ -1,5 +1,6 @@
-import { routerMiddleware } from 'react-router-redux';
+import { routerMiddleware, connectRouter } from 'connected-react-router';
 import promiseMiddleware from 'redux-promise-middleware';
+import { combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import logger from 'redux-logger';
 
@@ -13,5 +14,10 @@ export default initialState => {
   const middlewares = [thunkMiddleware, cookiesMiddleware, routerMiddleware(history), promiseMiddleware, logger];
   const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : f => f;
 
-  return configureStore(state, middlewares, reducers, devTools);
+  const rootReducer = combineReducers({
+    ...reducers,
+    router: connectRouter(history),
+  });
+
+  return configureStore(state, middlewares, rootReducer, devTools);
 };

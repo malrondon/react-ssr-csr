@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { renderRoutes } from 'react-router-config';
 import { createLocation } from 'history';
-import { ConnectedRouter } from 'react-router-redux';
+import { ConnectedRouter } from 'connected-react-router';
 import { AppContainer } from 'react-hot-loader';
 import DetectBrowser from 'react-detect-browser';
 import { trigger } from 'redial';
