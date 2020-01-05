@@ -69,7 +69,7 @@ import asyncMatchRoutes from '../utils/async-match-routes';
           );
         }}
       </DetectBrowser>,
-      document.getElementById('main')
+      document.querySelector('[data-js="main"]')
     );
 
     await trigger('fetch', components, triggerLocals);
