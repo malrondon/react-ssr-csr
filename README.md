@@ -1,4 +1,4 @@
-# React SSR and SPA
+# React SSR and CSR
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
 [![GitHub issues](https://img.shields.io/github/issues/org-rondon/react-ssr-csr.svg)](https://github.com/org-rondon/react-ssr-csr/issues)
@@ -84,3 +84,11 @@ Questions and answers:
 6. [Patterns](./docs/manual/06-patterns.md)
 
 **[⬆ back to top](#prerequisites)**
+
+## Log
+
+Check [Releases](https://github.com/org-rondon/react-ssr-csr/releases) for detailed changelog.
+
+## License
+
+[MIT license](http://hemersonvianna.mit-license.org/) © Hemerson Vianna
