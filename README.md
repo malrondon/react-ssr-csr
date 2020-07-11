@@ -1,12 +1,12 @@
 # React SSR and CSR
 
 [![licence mit](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://hemersonvianna.mit-license.org/)
-[![GitHub issues](https://img.shields.io/github/issues/org-rondon/react-ssr-csr.svg)](https://github.com/org-rondon/react-ssr-csr/issues)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/org-rondon/react-ssr-csr.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/org-rondon/react-ssr-csr.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/org-rondon/react-ssr-csr.svg)
-![GitHub repo size](https://img.shields.io/github/repo-size/org-rondon/react-ssr-csr.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/org-rondon/react-ssr-csr/total.svg)
+[![GitHub issues](https://img.shields.io/github/issues/malrondon/react-ssr-csr.svg)](https://github.com/malrondon/react-ssr-csr/issues)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/malrondon/react-ssr-csr.svg)
+![GitHub Release Date](https://img.shields.io/github/release-date/malrondon/react-ssr-csr.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/malrondon/react-ssr-csr.svg)
+![GitHub repo size](https://img.shields.io/github/repo-size/malrondon/react-ssr-csr.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/malrondon/react-ssr-csr/total.svg)
 
 ## Prerequisites
 
@@ -87,7 +87,7 @@ Questions and answers:
 
 ## Log
 
-Check [Releases](https://github.com/org-rondon/react-ssr-csr/releases) for detailed changelog.
+Check [Releases](https://github.com/malrondon/react-ssr-csr/releases) for detailed changelog.
 
 ## License
 
