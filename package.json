@@ -41,7 +41,7 @@
     "history": "4.9.0",
     "ignore-styles": "5.0.1",
     "immutable": "4.0.0-rc.12",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "newrelic": "5.10.0",
     "prop-types": "15.7.2",
     "query-string": "6.8.1",
